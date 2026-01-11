@@ -1,0 +1,15 @@
+This project applies Proximal Policy Optimization (PPO) to solve the CartPole-v1 environment using Stable-Baselines3.
+
+PPO is a policy-gradient-based Actor–Critic algorithm that directly optimizes a stochastic policy. 
+It improves training stability by limiting how much the policy can change during each update through clipped policy updates.
+The agent was trained using a neural network policy and value function. Training was performed for a fixed number of timesteps, 
+and performance was evaluated by computing the average episodic reward over multiple evaluation episodes.
+
+Compared to DQN, PPO exhibited smoother learning behavior and more stable performance across episodes.
+The stochastic nature of the policy allowed for better exploration without relying on epsilon-greedy strategies.
+
+This project highlights the advantages of policy-based reinforcement learning methods in terms of stability and robustness.
+
+Files included:
+cartpole_ppo.ipynb – training and evaluation notebook
+ppo_cartpole.zip – saved trained model

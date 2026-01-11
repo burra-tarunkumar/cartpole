@@ -1,0 +1,15 @@
+This project implements a Deep Q-Network (DQN) agent to solve the CartPole-v1 environment using the Stable-Baselines3 library.
+
+The objective of the agent is to learn a policy that balances the pole by maximizing the total episodic reward.
+The environment provides a reward of +1 for every timestep the pole remains upright.
+DQN is a value-based reinforcement learning algorithm that learns an approximation of the action-value function Q(s, a).
+The policy is derived by selecting the action with the highest predicted Q-value.
+Training was performed using a multilayer perceptron policy network.
+The agent was trained for a fixed number of timesteps and evaluated using a deterministic policy to measure average episodic reward.
+During training, the agent was able to learn the task, but performance showed noticeable variance across episodes. 
+The learning process was sensitive to hyperparameter choices such as learning rate and replay buffer size.
+This project demonstrates the strengths and limitations of value-based methods in simple control environments.
+
+Files included:
+cartpole_dqn.ipynb – training and evaluation notebook
+dqn_cartpole.zip – saved trained model
